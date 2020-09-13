@@ -31,61 +31,66 @@
 
     <div class="container">
       <!-- Timeblocks-->
-      <div class="row">
-        <p class="col-2 workhours">9AM</p>
+      <div id="hour-9" class="row time-block">
+        <div class="col-2 workhours">9AM</div>
         <textarea class="col-8 description"></textarea>
-        <button type="submit" class="col-2 saveBtn hour1"><i class="far fa-save"></i></button>
+        <button class="btn saveBtn col-2" data-hour="9"><i class="fas fa-save"></i></button>
       </div>
 
-      <div class="row">
-        <p class="col-2 workhours">10AM</p>
+      <div id="hour-10" class="row time-block">
+        <div class="col-2 workhours"> 10AM </div>
         <textarea class="col-8 description"></textarea>
-        <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <button class="btn saveBtn col-2"  data-hour="10"><i class="fas fa-save"></i></button>
       </div>
 
-      <div class="row">
-        <p class="col-2 workhours">11AM</p>
+      <div id="hour-11" class="row time-block">
+        <div class="col-md-2 workhours">11AM</div>
         <textarea class="col-8 description"></textarea>
-        <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <button class="btn saveBtn col-2"  data-hour="11"><i class="fas fa-save"></i></button>
       </div>
 
-      <div class="row">
-        <p class="col-2 workhours">12AM</p>
+      <div id="hour-12" class="row time-block">
+        <div class="col-2 workhours">12PM</div>
         <textarea class="col-8 description"></textarea>
-        <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
+        <button class="btn saveBtn col-2"  data-hour="12"><i class="fas fa-save"></i></button>
       </div>
 
-        <div class="row">
-          <p class="col-2 workhours">1PM</p>
-          <textarea class="col-8 description"></textarea>
-          <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
-        </div>
+      <div id="hour-13" class="row time-block">
+        <div class="col-2 workhours">1PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="btn saveBtn col-2"  data-hour="13"><i class="fas fa-save"></i></button>
+      </div>
 
-        <div class="row">
-          <p class="col-2 workhours">2PM</p>
-          <textarea class="col-8 description"></textarea>
-          <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
-        </div>
+      <div id="hour-14" class="row time-block">
+        <div class="col-2 workhours">2PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="btn saveBtn col-2"  data-hour="14"><i class="fas fa-save"></i></button>
+      </div>
 
-        <div class="row">
-          <p class="col-2 workhours">3PM</p>
-          <textarea class="col-8 description"></textarea>
-          <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
-        </div>
+      <div id="hour-15" class="row time-block">
+        <div class="col-2 workhours">3PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="btn saveBtn col-2"  data-hour="15"><i class="fas fa-save"></i></button>
+      </div>
 
-        <div class="row">
-          <p class="col-2 workhours">4PM</p>
-          <textarea class="col-8 description"></textarea>
-          <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
-        </div>
-        
-        <div class="row">
-          <p class="col-2 workhours">5PM</p>
-          <textarea class="col-8 description"></textarea>
-          <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
-        </div>
-      </form>
-    </div>
+      <div id="hour-16" class="row time-block">
+        <div class="col-2 workhours">4PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="btn saveBtn col-2"  data-hour="16"><i class="fas fa-save"></i></button>
+      </div>
+
+      <div id="hour-17" class="row time-block">
+        <div class="col-2 workhours">5PM</div>
+        <textarea class="col-8 description"></textarea>
+        <button class="btn saveBtn col-2"  data-hour="17"><i class="fas fa-save"></i></button>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
+
       
       <hr>
       <div>
