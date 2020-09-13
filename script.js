@@ -13,21 +13,7 @@ var planning
     }
 
 
-//Way to loop my HTML???
-
-/* for (i = 0; i < SOMETHING TO SHOW THE LENGTH; i++) {
-$("container")
-
-
-
-<div class="row">
-        <p class="col-2 workhours">12AM</p>
-        <textarea class="col-8 description"></textarea>
-        <button type="submit" class="col-2 saveBtn"><i class="far fa-save"></i></button>
-      </div> 
-
-
-
+/*
 
 //insert class past, present and future based on the time of day to the workhours class with an if statment
 
@@ -50,10 +36,56 @@ function theTime(){
 */
 
 //keep entered text in local storage if save btn pressed
-var saveBtn = document.querySelector(".saveBtn")
+var saveBtn1 = document.querySelector(".hour1")
+saveBtn1.addEventListener("click", makePlan);
+function makePlan(){
+    console.log("details have been saved")
+}
 
-saveBtn.addEventListener("click", makePlan);
+var saveBtn2 = document.querySelector(".hour2")
+saveBtn2.addEventListener("click", makePlan);
+function makePlan(){
+    console.log("details have been saved")
+}
 
+var saveBtn3 = document.querySelector(".hour3")
+saveBtn3.addEventListener("click", makePlan);
+function makePlan(){
+    console.log("details have been saved")
+}
+
+var saveBtn4 = document.querySelector(".hour4")
+saveBtn4.addEventListener("click", makePlan);
+function makePlan(){
+    console.log("details have been saved")
+}
+
+var saveBtn5 = document.querySelector(".hour5")
+saveBtn5.addEventListener("click", makePlan);
+function makePlan(){
+    console.log("details have been saved")
+}
+
+var saveBtn6 = document.querySelector(".hour6")
+saveBtn6.addEventListener("click", makePlan);
+function makePlan(){
+    console.log("details have been saved")
+}
+
+var saveBtn7 = document.querySelector(".hour7")
+saveBtn7.addEventListener("click", makePlan);
+function makePlan(){
+    console.log("details have been saved")
+}
+
+var saveBtn8 = document.querySelector(".hour8")
+saveBtn8.addEventListener("click", makePlan);
+function makePlan(){
+    console.log("details have been saved")
+}
+
+var saveBtn9 = document.querySelector(".hour9")
+saveBtn9.addEventListener("click", makePlan);
 function makePlan(){
     console.log("details have been saved")
 }
