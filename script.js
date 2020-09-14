@@ -1,5 +1,5 @@
-//initialize the page after the page is loaded (document is reaady)
-$(document).ready(init);
+//start code once page has loaded
+$(document).ready(planDay);
 
 //global variables
 var timeOfDay = moment().format('MMMM Do YYYY, h:mm a')
@@ -7,19 +7,15 @@ var schedule = [];
 
 
 // function that initializes the page
-function init() {
-  console.log('page is ready');
+function planDay() {
 
 //display current date and time
-      displayDate();
-
-  function displayDate(){
-    $('#timeofDay').append(timeOfDay);
-    }
+    $("#timeofDay").text(moment().format("dddd, MMMM Do"));
+    
+    
 
 
 /*
-
 //insert class past, present and future based on the time of day to the workhours class with an if statment
 
 //if past current time, append class past
@@ -39,46 +35,35 @@ function theTime(){
 }
 
 */
+
+
 // attach click event on all save buttons buttons on the page
 $('.saveBtn').on('click', saveButtonClick);
-
-// read schedule from local storage and display it
-//displaySchedule();
 }
 
 //function executed everytime a save button is pressed:\
 function saveButtonClick() {
 var hourSelected = parseInt($(this).attr('data-hour'));
+console.log(hourSelected)
 
 var description = $('#hour-' + hourSelected + ' .description')
   .val()
-  .trim();
-  
   schedule[hourSelected] = description;
   
-//you can save only strings in the local storage
-var stringSchedule = JSON.stringify(schedule);
-
-localStorage.setItem('myDay', stringSchedule);
+//save strings in local storage
+localStorage.setItem(hourSelected, description);
 }
 
-// read schedule from local storage and display it
-function displaySchedule() {
-var stringSchedule = localStorage.getItem('myDay');
-
-//convert string back to array
-schedule = JSON.parse(stringSchedule);
-
-console.log('stored schedule is:', schedule);
-
-// read every line in the schedule that was on the local
-// storage and set the schedule timetable on the screen accordingly
-for (var hour = 0; hour < schedule.length; hour++) {
-  console.log(schedule[hour]);
-
-  $('#hour-' + hour + ' .description').val(schedule[hour]);
-}
-}
+// read from local storage and display
+$("#hour-9 .description").val(localStorage.getItem('9'));
+$("#hour-10 .description").val(localStorage.getItem('10'));
+$("#hour-11 .description").val(localStorage.getItem('11'));
+$("#hour-12 .description").val(localStorage.getItem('12'));
+$("#hour-13 .description").val(localStorage.getItem('13'));
+$("#hour-14 .description").val(localStorage.getItem('14'));
+$("#hour-15 .description").val(localStorage.getItem('15'));
+$("#hour-16 .description").val(localStorage.getItem('16'));
+$("#hour-17 .description").val(localStorage.getItem('17'));
 
 //button to clear local storage
 $('.clearDay').on('click', clearLocalStorage);
