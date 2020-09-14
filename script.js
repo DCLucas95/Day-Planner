@@ -71,5 +71,5 @@ $('.clearDay').on('click', clearLocalStorage);
 function clearLocalStorage(){
     location.reload()
     window.localStorage.clear();
-    alert("day has been cleared")
+    alert("Day has been cleared!")
 }
