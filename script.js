@@ -1,45 +1,42 @@
-//start code once page has loaded
-$(document).ready(planDay);
-
 //global variables
 var timeOfDay = moment().format('MMMM Do YYYY, h:mm a')
+//var boxPlanner = $('data-hour');//not reading what i want it too/ Make it read what data hour equals?
+var currentHour = moment().hour();
 var schedule = [];
-
-
-// function that initializes the page
-function planDay() {
+var timeBlock = $(".time-block")
 
 //display current date and time
-    $("#timeofDay").text(moment().format("dddd, MMMM Do"));
-    
-    
+$("#timeofDay").text(moment().format("dddd, MMMM Do"));
 
 
-/*
 //insert class past, present and future based on the time of day to the workhours class with an if statment
+//how to make for loop go to each time block???
+for(i = 0; i < timeBlock.length; i++) {
+var boxPlanner = $(this).attr("id");
+console.log(boxPlanner);
 
-//if past current time, append class past
-function theTime(){
-    timeOfDay > actualTime then .addClass - past
+
+    //plans before current time
+    if (currentHour > boxPlanner){
+        $("textarea").addClass("past")
+    }
+
+    //plans at current time
+    else if (currentHour = boxPlanner){
+        $("textarea").addClass("present")
+    }
+
+    //plans after current time
+    else if (currentHour < boxPlanner){
+        $("textarea").addClass("future") 
+    }
 }
 
-//if current time, append class present
-}
-    else if timeOfDay;  {
-     timeOfDay = actualTime then .addClass - present
-}
-
-//if after current time, append class future
-    else if timeOfDay; {
-     timeOfDay < actualTime then .addClass - future 
-}
-
-*/
 
 
 // attach click event on all save buttons buttons on the page
 $('.saveBtn').on('click', saveButtonClick);
-}
+
 
 //function executed everytime a save button is pressed:\
 function saveButtonClick() {
