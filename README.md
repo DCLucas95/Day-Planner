@@ -4,7 +4,7 @@
 
 # Contents
 <p>Please visit the site hosted on Github to see working HTML, CSS and Javascript at:
-https://dclucas95.github.io/Day-Planner/.</p>
+https://dclucas95.github.io/Work-Day-Scheduler/.</p>
 
 
 # Images
