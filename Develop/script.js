@@ -1,6 +1,5 @@
 //global variables
 var timeOfDay = moment().format('MMMM Do YYYY, h:mm a')
-//var boxPlanner = $('data-hour');//not reading what i want it too/ Make it read what data hour equals?
 var currentHour = moment().hour();
 var schedule = [];
 var timeBlock = $(".time-block")
@@ -9,27 +8,30 @@ var timeBlock = $(".time-block")
 $("#timeofDay").text(moment().format("dddd, MMMM Do"));
 
 
-//insert class past, present and future based on the time of day to the workhours class with an if statment
-//how to make for loop go to each time block???
-for(i = 0; i < timeBlock.length; i++) {
-var boxPlanner = $(this).attr("id");
-console.log(boxPlanner);
+//insert class past, present and future based on the time of day
+updateHours()
+function updateHours(){
+    var timeBlock = $(".time-block");
+    timeBlock.each(function(){
+        //split id hour-'number' so that the hour in table can be compared to actual hour in day
+        var hour = parseInt($(this).attr('id').split("-")[1]);
+        console.log(hour);
 
+        //plans before current time
+        if (currentHour > hour){
+            $(this).addClass("past")
+        }
 
-    //plans before current time
-    if (currentHour > boxPlanner){
-        $("textarea").addClass("past")
-    }
+        //plans at current time
+        else if (currentHour === hour){
+            $(this).addClass("present")
+        }
 
-    //plans at current time
-    else if (currentHour = boxPlanner){
-        $("textarea").addClass("present")
-    }
-
-    //plans after current time
-    else if (currentHour < boxPlanner){
-        $("textarea").addClass("future") 
-    }
+        //plans after current time
+        else if (currentHour < hour){
+            $(this).addClass("future") 
+        }
+    })
 }
 
 
