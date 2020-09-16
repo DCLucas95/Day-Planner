@@ -8,13 +8,13 @@ https://dclucas95.github.io/Work-Day-Scheduler/.</p>
 
 
 # Images
-![image](https://user-images.githubusercontent.com/69066157/93317336-b1a9f880-f850-11ea-868a-5c49506d6604.png)
+![image](https://user-images.githubusercontent.com/69066157/93317336-b1a9f880-f850-11ea-868a-5c49506d6604.png)<br />
 -Snip showing blank workday with all areas greyed to indicate end of work day
 
-![image](https://user-images.githubusercontent.com/69066157/93317952-6cd29180-f851-11ea-9e2c-3e0a667de3bf.png)
+![image](https://user-images.githubusercontent.com/69066157/93317952-6cd29180-f851-11ea-9e2c-3e0a667de3bf.png)<br />
 -Button displaying alert of local storage clear to indicate the day being cleared
 
-![image](https://user-images.githubusercontent.com/69066157/93317869-4dd3ff80-f851-11ea-952c-68ec5876efb8.png)
+![image](https://user-images.githubusercontent.com/69066157/93317869-4dd3ff80-f851-11ea-952c-68ec5876efb8.png)<br />
 -text persisting after page is refreshed
 
 
