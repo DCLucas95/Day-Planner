@@ -24,11 +24,11 @@ https://dclucas95.github.io/Day-Planner/.</p>
 # Tools Used
 <ul>
 <li>Github for commitments and website hosting </li>
-<li>-VS Studio for creating the javascript </li>
-<li>-Moment.js for time keeping </li>
-<li>-Bootstrap for the layout and styling </li>
-<li>-FontAwesome for the save button icons </li>
-<li>-Jquery for easy to code javascript </li>
+<li>VS Studio for creating the javascript </li>
+<li>Moment.js for time keeping </li>
+<li>Bootstrap for the layout and styling </li>
+<li>FontAwesome for the save button icons </li>
+<li>Jquery for easy to code javascript </li>
 </ul>
 
 # Author
